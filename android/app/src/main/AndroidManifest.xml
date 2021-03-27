@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="np.com.sangams.wordpress_news">
    <application
-        android:label="wordpress_news"
+        android:label="Wordpress News"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
