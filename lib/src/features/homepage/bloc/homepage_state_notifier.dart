@@ -11,9 +11,9 @@ class HomepageStateNotifier extends StateNotifier<AsyncValue<List<WpPost>>> {
 
   Future<void> _fetchPosts() async {
     final failureOrList = await _homepageRepo.getPost();
-    failureOrList.fold(
+    state = failureOrList.fold(
       (failure) => AsyncValue.error(failure),
-      (wpPostList) => state = AsyncValue.data(wpPostList),
+      (wpPostList) => AsyncValue.data(wpPostList),
     );
   }
 }
