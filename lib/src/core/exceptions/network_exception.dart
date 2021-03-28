@@ -78,35 +78,21 @@ class NetworkException with _$NetworkException {
 
   @override
   String toString() {
-    switch (this.runtimeType) {
-      case _BadRequest:
-        return 'Bad Request';
-      case _NoInternetConnection:
-        return 'No Internet Connection';
-      case _CanceledByUser:
-        return 'Canceled by User';
-      case _Conflict:
-        return 'Conflict';
-      case _ConnectTimeout:
-        return 'Connection Timeout';
-      case _Forbidden:
-        return 'Forbidden';
-      case _InternalServerError:
-        return 'Internal Server Error';
-      case _NotFound:
-        return 'Not Found';
-      case _ReceiveTimeout:
-        return 'Receive Timeout';
-      case _RequestTimeout:
-        return 'Request Timeout';
-      case _SendTimeout:
-        return 'Send Timeout';
-      case _ServiceUnavailable:
-        return 'Service Unavailable';
-      case _UnauthorisedRequest:
-        return 'Unauthorized Request';
-      default:
-        return 'Unknown Error';
-    }
+    return this.when(
+      noInternetConnection: () => 'No Internet Connection',
+      canceledByUser: () => 'Canceled By User',
+      connectTimeout: () => 'Connect Timeout',
+      receiveTimeout: () => 'Receive Timeout',
+      sendTimeout: () => 'Send Timeout',
+      badRequest: () => 'Bad Request',
+      unauthorisedRequest: () => 'Unauthorised Request',
+      forbidden: () => 'Forbidden',
+      notFound: () => 'Not Found',
+      requestTimeout: () => 'Request Timeout',
+      conflict: () => 'Conflict',
+      internalServerError: () => 'Internal ServerError',
+      serviceUnavailable: () => 'Service Unavailable',
+      unknownError: () => 'Unknown Error',
+    );
   }
 }
