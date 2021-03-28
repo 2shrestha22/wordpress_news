@@ -28,7 +28,13 @@ class Homepage extends StatelessWidget {
 
               return asyncPostList.when(
                 loading: () => CustomLoadingWidget(),
-                error: (failure, _) => ErrorPage(message: failure.toString()),
+                error: (failure, _) => ErrorPage(
+                  message: failure.toString(),
+                  onRefresh: () => context
+                      .refresh(homepageStateNotifierProvider)
+                      .stream
+                      .firstWhere((value) => value is! AsyncLoading),
+                ),
                 data: (postList) => ListView.builder(
                   itemCount: postList.length,
                   itemBuilder: (context, index) =>

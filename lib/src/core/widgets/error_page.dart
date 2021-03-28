@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class ErrorPage extends StatelessWidget {
   final String message;
+  final VoidCallback onRefresh;
 
-  const ErrorPage({Key? key, required this.message}) : super(key: key);
+  const ErrorPage({Key? key, required this.message, required this.onRefresh})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -15,7 +17,7 @@ class ErrorPage extends StatelessWidget {
             // style: Theme.of(context).textTheme.headline6,
           ),
           ElevatedButton.icon(
-            onPressed: () {},
+            onPressed: onRefresh,
             icon: Icon(Icons.refresh),
             label: Text('Refresh'),
           )
