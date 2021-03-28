@@ -195,11 +195,6 @@ class _$_NoInternetConnection extends _NoInternetConnection {
   const _$_NoInternetConnection() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.noInternetConnection()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _NoInternetConnection);
   }
@@ -327,11 +322,6 @@ class __$CanceledByUserCopyWithImpl<$Res>
 /// @nodoc
 class _$_CanceledByUser extends _CanceledByUser {
   const _$_CanceledByUser() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.canceledByUser()';
-  }
 
   @override
   bool operator ==(dynamic other) {
@@ -463,11 +453,6 @@ class _$_ConnectTimeout extends _ConnectTimeout {
   const _$_ConnectTimeout() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.connectTimeout()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _ConnectTimeout);
   }
@@ -595,11 +580,6 @@ class __$ReceiveTimeoutCopyWithImpl<$Res>
 /// @nodoc
 class _$_ReceiveTimeout extends _ReceiveTimeout {
   const _$_ReceiveTimeout() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.receiveTimeout()';
-  }
 
   @override
   bool operator ==(dynamic other) {
@@ -731,11 +711,6 @@ class _$_SendTimeout extends _SendTimeout {
   const _$_SendTimeout() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.sendTimeout()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _SendTimeout);
   }
@@ -863,11 +838,6 @@ class __$BadRequestCopyWithImpl<$Res>
 /// @nodoc
 class _$_BadRequest extends _BadRequest {
   const _$_BadRequest() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.badRequest()';
-  }
 
   @override
   bool operator ==(dynamic other) {
@@ -999,11 +969,6 @@ class _$_UnauthorisedRequest extends _UnauthorisedRequest {
   const _$_UnauthorisedRequest() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.unauthorisedRequest()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _UnauthorisedRequest);
   }
@@ -1132,11 +1097,6 @@ class _$_Forbidden extends _Forbidden {
   const _$_Forbidden() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.forbidden()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _Forbidden);
   }
@@ -1261,11 +1221,6 @@ class __$NotFoundCopyWithImpl<$Res> extends _$NetworkExceptionCopyWithImpl<$Res>
 /// @nodoc
 class _$_NotFound extends _NotFound {
   const _$_NotFound() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.notFound()';
-  }
 
   @override
   bool operator ==(dynamic other) {
@@ -1397,11 +1352,6 @@ class _$_RequestTimeout extends _RequestTimeout {
   const _$_RequestTimeout() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.requestTimeout()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _RequestTimeout);
   }
@@ -1526,11 +1476,6 @@ class __$ConflictCopyWithImpl<$Res> extends _$NetworkExceptionCopyWithImpl<$Res>
 /// @nodoc
 class _$_Conflict extends _Conflict {
   const _$_Conflict() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.conflict()';
-  }
 
   @override
   bool operator ==(dynamic other) {
@@ -1662,11 +1607,6 @@ class _$_InternalServerError extends _InternalServerError {
   const _$_InternalServerError() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.internalServerError()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _InternalServerError);
   }
@@ -1796,11 +1736,6 @@ class _$_ServiceUnavailable extends _ServiceUnavailable {
   const _$_ServiceUnavailable() : super._();
 
   @override
-  String toString() {
-    return 'NetworkException.serviceUnavailable()';
-  }
-
-  @override
   bool operator ==(dynamic other) {
     return identical(this, other) || (other is _ServiceUnavailable);
   }
@@ -1928,11 +1863,6 @@ class __$UnknownErrorCopyWithImpl<$Res>
 /// @nodoc
 class _$_UnknownError extends _UnknownError {
   const _$_UnknownError() : super._();
-
-  @override
-  String toString() {
-    return 'NetworkException.unknownError()';
-  }
 
   @override
   bool operator ==(dynamic other) {
